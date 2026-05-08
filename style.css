@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+ background-color: black;
+ font-family: monospace;
+}
+
+.wrapper{
+    width:200px;
+    height: 200px;
+    color:white;
+    font-size: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+article{
+    border:1px solid white;
+    padding:5px 10px;
+    border-radius: 15px;
+    display:flex;
+    align-items: center;
+    gap:10px;
+    font-size:24px;
+    transition: all 0.4s;
+}
+article:hover{
+    background-color: white;
+    color:black;
+}
+article:nth-child(1):hover{
+    color:lightskyblue;
+}
+article:nth-child(2) {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  border: 1px solid white;
+}
+
+/* Hover holati */
+article:nth-child(2):hover {
+  background-color: white; /* Orqa fon oq bo'ladi */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Chiroyliroq ko'rinishi uchun soya */
+}
+
+/* Hover bo'lganda ichidagi matn va ikonka rangi */
+article:nth-child(2):hover span,
+article:nth-child(2):hover i {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285ae1 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+article:nth-child(3):hover{
+    color:rgb(19, 20, 20);
+}
+article:nth-child(4):hover{
+    color:rgb(3, 62, 255);
+}
+article:nth-child(5):hover{
+    color:rgb(0, 46, 199);
+}
+article:nth-child(6):hover{
+    color:rgb(255, 0, 0);
+}
+article:nth-child(7):hover{
+    color:rgb(2, 21, 29);
+}
+article:nth-child(8):hover{
+    color:rgb(1, 62, 155);
+}
+article:nth-child(9):hover{
+    color:rgb(238, 183, 1);
+}
